@@ -1,8 +1,12 @@
 package com.example.keep.Repository
 
-class UserRepository {
+import com.example.keep.Interface.UerApiService
+import com.example.keep.Model.UserLoginRequest
+import com.example.keep.Model.UserResponse
+import retrofit2.Response
 
-    fun printSomeInfo(){
-        println("Heyyyy!");
+class UserRepository(private val uerApiService: UerApiService) {
+    fun login(){
+        //uerApiService.loginUser();
     }
 }
